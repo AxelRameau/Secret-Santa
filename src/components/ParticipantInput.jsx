@@ -1,6 +1,6 @@
 import Bonhomme from "/public/bonhomme.png";
 import Lutin from "/public/lutin.png";
-import Santa from "/public/santa.png";
+import Santa from "/public/Santa.png";
 import Bambi from "/public/Bambi.png";
 // Ce composant affiche la liste des participants
 // Il prend en props le tableau de participants : participants

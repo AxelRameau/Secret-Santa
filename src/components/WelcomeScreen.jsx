@@ -1,5 +1,5 @@
-import coverImage from "/public/Screen_mobile_cover.svg";
-import Desktop from "/public/cover-desk.png";
+import coverImage from "/Screen_mobile_cover.svg";
+import Desktop from "/cover-desk.png";
 import Snowfall from "react-snowfall";
 // Ecran d'accueil de l'application
 // Ce composant prend en props une fonction pour démarrer l'application : onStart
