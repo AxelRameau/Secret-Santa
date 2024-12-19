@@ -21,7 +21,7 @@ export function WelcomeScreen({ onStart }) {
           </p>
         </section>
         <button onClick={onStart} className="button">
-          C’est parti
+          C’est parti !
         </button>
       </div>
     </div>
