@@ -1,6 +1,6 @@
 import Snowfall from "react-snowfall";
-import Lutin from "../Images/lutin.png";
-import Santa from "../Images/santa.png";
+import Lutin from "/public/lutin.png";
+import Santa from "/public/santa.png";
 // Ce composant affiche la liste des assignments
 // Il prend en props le tableau d'assignments
 export function AssignmentDisplay({ assignments }) {

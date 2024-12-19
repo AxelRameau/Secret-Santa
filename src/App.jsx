@@ -3,7 +3,7 @@ import { useState } from "react";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { ParticipantInput } from "./components/ParticipantInput";
 import { AssignmentDisplay } from "./components/AssignmentDisplay";
-import Fond from "./Images/Arrondi.png";
+import Fond from "/public/Arrondi.png";
 
 export default function App() {
   // Tableau des participants

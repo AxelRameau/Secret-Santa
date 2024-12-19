@@ -1,7 +1,7 @@
-import Bonhomme from "../Images/bonhomme.png";
-import Lutin from "../Images/lutin.png";
-import Santa from "../Images/santa.png";
-import Bambi from "../Images/Bambi.png";
+import Bonhomme from "/public/bonhomme.png";
+import Lutin from "/public/lutin.png";
+import Santa from "/public/santa.png";
+import Bambi from "/public/Bambi.png";
 // Ce composant affiche la liste des participants
 // Il prend en props le tableau de participants : participants
 // Il prend en props une fonction pour ajouter un participant : onAddParticipant
