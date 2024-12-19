@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { ParticipantInput } from "./components/ParticipantInput";
@@ -51,18 +52,15 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto bg-beige text-marron">
       <div>
-        // affiche l'écran en fonction de l'état de l'application // WELCOME
+        {/* // affiche l'écran en fonction de l'état de l'application // WELCOME */}
         {currentScreen === "welcome" && (
           <WelcomeScreen onStart={() => setCurrentScreen("input")} />
         )}
-        // INPUT
+        {/* // INPUT */}
         {currentScreen === "input" && (
           <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Ajoutez les participants
-            </h2>
             <ParticipantInput
               onAddParticipant={addParticipant}
               participants={participants}
@@ -75,7 +73,7 @@ export default function App() {
             </div>
           </>
         )}
-        // ASSIGNMENTS
+        {/* // ASSIGNMENTS */}
         {currentScreen === "assignments" && (
           <>
             <h2 className="text-2xl font-bold mb-6 text-center">
