@@ -22,4 +22,7 @@
   .titre {
     @apply text-4xl font-bold text-bleu ;
   }
+  .button{
+    @apply bg-orange text-white px-20 py-2.5 rounded-full text-lg w-fit font-semibold hover:bg-orange/80 hover:cursor-pointer;
+  }
 }

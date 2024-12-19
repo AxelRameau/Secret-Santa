@@ -33,7 +33,7 @@ export function ParticipantInput({
   };
 
   return (
-    <div className="h-screen w-screen px-5 flex flex-col gap-10">
+    <div className="flex flex-col gap-10">
       {/* // Champs de saisie pour ajouter un participant */}
       <section className="flex flex-col gap-2.5">
         <h2 className="titre">Choix des participants 🎄</h2>

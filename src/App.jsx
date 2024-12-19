@@ -3,6 +3,7 @@ import { useState } from "react";
 import { WelcomeScreen } from "./components/WelcomeScreen";
 import { ParticipantInput } from "./components/ParticipantInput";
 import { AssignmentDisplay } from "./components/AssignmentDisplay";
+import Fond from "./Images/Arrondi.png";
 
 export default function App() {
   // Tableau des participants
@@ -52,7 +53,7 @@ export default function App() {
   };
 
   return (
-    <div className="container mx-auto bg-beige text-marron">
+    <div className="container bg-beige text-marron">
       <div>
         {/* // affiche l'écran en fonction de l'état de l'application // WELCOME */}
         {currentScreen === "welcome" && (
@@ -60,32 +61,31 @@ export default function App() {
         )}
         {/* // INPUT */}
         {currentScreen === "input" && (
-          <>
+          <div className="h-screen w-screen flex flex-col justify-between pt-7 py-12 px-7 items-center">
             <ParticipantInput
               onAddParticipant={addParticipant}
               participants={participants}
               onRemoveParticipant={removeParticipant}
             />
             <div className="mt-6">
-              <button className="button w-full" onClick={distributeGifts}>
+              <button className="button" onClick={distributeGifts}>
                 Distribuer les cadeaux
               </button>
             </div>
-          </>
+          </div>
         )}
         {/* // ASSIGNMENTS */}
         {currentScreen === "assignments" && (
-          <>
-            <h2 className="text-2xl font-bold mb-6 text-center">
-              Attributions des cadeaux
-            </h2>
+          <div className="flex flex-col gap-10 w-screen h-screen text-center">
+            <img className="h-1/3 w-full" src={Fond} alt="" />
             <AssignmentDisplay assignments={assignments} />
-            <div className="mt-6">
-              <button className="button w-full" onClick={resetApp}>
+
+            <div className="mx-auto">
+              <button className="button" onClick={resetApp}>
                 Recommencer
               </button>
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>
