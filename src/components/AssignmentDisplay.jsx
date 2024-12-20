@@ -17,7 +17,7 @@ export function AssignmentDisplay({ assignments }) {
             </h2>
       {assignments.map((assignment, index) => (
         <li className="text-xl " key={index}>
-          <span className="text-vert font-bold">{assignment.giver}</span> offre un beau cadeau à{" "}
+          <span className="text-vert font-bold">{assignment.giver}</span> offre un cadeau à{" "}
           <span className="text-vert font-bold">{assignment.receiver}</span>
         </li>
       ))}
